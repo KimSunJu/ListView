@@ -55,6 +55,7 @@
             this.lvView.TabIndex = 0;
             this.lvView.UseCompatibleStateImageBehavior = false;
             this.lvView.View = System.Windows.Forms.View.Details;
+            this.lvView.Click += new System.EventHandler(this.lvView_Click);
             // 
             // lblName
             // 
@@ -112,6 +113,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "추가";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // chName
             // 
@@ -125,7 +127,7 @@
             // 
             // chWork
             // 
-            this.chWork.Text = "집업";
+            this.chWork.Text = "직업";
             this.chWork.Width = 100;
             // 
             // Form1
@@ -145,6 +147,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "입력 목록 보기";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
